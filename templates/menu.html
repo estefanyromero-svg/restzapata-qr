@@ -1,0 +1,1327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>VIVA ZAPATA</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
+</head>
+<body>
+  <header>
+    <h1>🍽️ Menú VIVA ZAPATA</h1>
+  </header>
+
+
+<!-- ================= ENTRADAS ================= -->
+  <section class="menu-section">
+    <div class="category-header">
+      <img src="{{ url_for('static', filename='img/entradas.png') }}" alt="Entradas">
+      <h2>Entradas</h2>
+    </div>
+
+    <div class="menu-items">
+      <div class="item">
+        <h3>Tostadas María Bonita</h3>
+        <p>Crujientes tostadas de maíz coronadas con un fresco ceviche de camarón, cubos de mango y pepino. Aderezadas con un toque picante que resalta los sabores tropicales.</p>
+        <div class="precio">$24.000</div>
+        <button onclick="agregarPedido('Tostadas María Bonita', 24000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Elote Chingón</h3>
+        <p>Elote a la parrilla bañado con nuestra tártara de la casa, cubierto con crujiente tocineta ahumada, queso fresco y un toque de Tajín.</p>
+        <div class="precio">$26.000</div>
+        <button onclick="agregarPedido('Elote Chingón', 26000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Empanadillas Mexicanas</h3>
+        <p>3 empanaditas de trigo rellenas de cerdo al pastor, birria de res y pollo desmechado a la mexicana. Acompañadas de salsa verde de la casa y ají.</p>
+        <div class="precio">$24.000</div>
+        <button onclick="agregarPedido('Empanadillas Mexicanas', 24000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Guacamole Zapata</h3>
+        <p>Suave base de guacamole fresco, coronada con chicharrón crujiente, totopos, pico de gallo y una selección de salsas caseras.</p>
+        <div class="precio">$32.000</div>
+        <button onclick="agregarPedido('Guacamole Zapata', 32000)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= BURRITOS ================= -->
+  <section class="menu-section">
+    <div class="category-header">
+      <img src="{{ url_for('static', filename='img/burritos.png') }}" alt="Burritos">
+      <h2>Burritos</h2>
+    </div>
+
+    <div class="menu-items">
+      <div class="item">
+        <h3>Pollo</h3>
+        <p>Deliciosa combinación de frijoles refritos, arroz, pollo a la mexicana (salteado con cebolla, pimentones y salsa de la casa), aguacate, maíz, salsa de cilantro envuelto en tortilla de trigo XL. Acompañado de totopos y guacamole.</p>
+        <div class="precio">$34.000</div>
+        <button onclick="agregarPedido('Burrito de Pollo', 34000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Birria de Res</h3>
+        <p>Deliciosa combinación de frijoles refritos, arroz, birria de res, aguacate, maíz, salsa de cilantro envuelto en tortilla de trigo XL. Acompañado de totopos y guacamole.</p>
+        <div class="precio">$37.000</div>
+        <button onclick="agregarPedido('Burrito de Birria de Res', 37000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Pastor</h3>
+        <p>Deliciosa combinación de frijoles refritos, arroz, cerdo marinado, piña asada, aguacate, maíz, salsa de cilantro envuelto en tortilla de trigo XL. Acompañado de totopos y guacamole.</p>
+        <div class="precio">$35.000</div>
+        <button onclick="agregarPedido('Burrito Pastor', 35000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Chili con Carne</h3>
+        <p>Delicioso chili con carne, queso cheddar, mayonesa de la casa envuelto en tortilla de trigo XL. Acompañado de totopos y salsa verde.</p>
+        <div class="precio">$35.000</div>
+        <button onclick="agregarPedido('Burrito Chili con Carne', 35000)">Agregar</button>
+      </div>
+
+      <div class="item">
+        <h3>Veggie</h3>
+        <p>Deliciosa combinación de champiñones salteados, pimientos, cebolla morada, frijoles negros y arroz, mayonesa de la casa, todo envuelto en una suave tortilla de harina de trigo XL. Acompañados de totopos y salsa verde.</p>
+        <div class="precio">$28.000</div>
+        <button onclick="agregarPedido('Burrito Veggie', 28000)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DORILOCOS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/dorilocos.png') }}" alt="Dorilocos">
+    <h2>Dorilocos</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Cochinita</h3>
+      <p>Dorilocos acompañados de cochinita, queso derretido Oaxaca, pico de gallo y guacamole.</p>
+      <div class="precio">$38.000</div>
+      <button onclick="agregarPedido('Dorilocos Cochinita', 38000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Birria de Res</h3>
+      <p>Dorilocos acompañados de birria de res, queso derretido Oaxaca, pico de gallo y guacamole.</p>
+      <div class="precio">$40.000</div>
+      <button onclick="agregarPedido('Dorilocos Birria de Res', 40000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Pastor</h3>
+      <p>Dorilocos acompañados de carne al pastor, queso derretido Oaxaca, pico de gallo y guacamole.</p>
+      <div class="precio">$38.000</div>
+      <button onclick="agregarPedido('Dorilocos Pastor', 38000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= ESPECIALIDADES ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/especialidades.png') }}" alt="Especialidades">
+    <h2>Especialidades</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Salmón Jamaica</h3>
+      <p>Pieza de salmón parrillado en salsa de reducción de flor de Jamaica con chile manzano, acompañado de puré de papa rústico, verduras salteadas al wok y pieza de elote.</p>
+      <div class="precio">$65.000</div>
+      <button onclick="agregarPedido('Salmón Jamaica', 65000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Costillas BBQ Tamarindo</h3>
+      <p>Baby Rack de costillas de 350 gr adobadas en salsa barbacoa de tamarindo con toques ligeros de chile ancho. Acompañadas de papa rústica en sal de chile.</p>
+      <div class="precio">$55.000</div>
+      <button onclick="agregarPedido('Costillas BBQ Tamarindo', 55000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Pollo Chiltepín</h3>
+      <p>Jugosa milanesa de pollo apanada (150 gr) bañada en salsa de la casa. Acompañada de papa rústica en sal de chile.</p>
+      <div class="precio">$49.000</div>
+      <button onclick="agregarPedido('Pollo Chiltepín', 49000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Lomo Chemita</h3>
+      <p>Piezas de lomo fino en tocineta, albardadas en salsa demiglace con chile ancho y langostinos al ajillo, sobre cama de puré de papa rústico. Servido con vegetales salteados al wok y pieza de elote.</p>
+      <div class="precio">$65.000</div>
+      <button onclick="agregarPedido('Lomo Chemita', 65000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Alitas en salsa BBQ</h3>
+      <p>Exquisitas alitas ahumadas y bañadas en salsa BBQ con un toque de chipotle, acompañadas de papa francesa.</p>
+      <div class="precio">$52.000</div>
+      <button onclick="agregarPedido('Alitas en salsa BBQ', 52000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Robalo Pacífico</h3>
+      <p>Pieza de robalo de 250 gr en salsa bisque. Servido con vegetales salteados al wok y papas rústicas crocantes.</p>
+      <div class="precio">$65.000</div>
+      <button onclick="agregarPedido('Robalo Pacífico', 65000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= ESPECIALIDADES FIN DE SEMANA ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/especialidades_fin_semana.jpg') }}" alt="Especialidades Fin de Semana">
+    <h2>Especialidades Fin de Semana</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Pozole</h3>
+      <p>Tradicional Pozole mexicano, sopa a base de granos de maíz blanco, acompañado de tortillas nixtamalizadas y sour cream.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Pozole', 25000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Barbacoa Mexicana</h3>
+      <p>Selección de carnes maduradas, ahumadas a la brasa y chorizo, acompañadas de pieza de mazorca asada y yuca con chimichurri.</p>
+      <div class="precio">$64.000</div>
+      <button onclick="agregarPedido('Barbacoa Mexicana', 64000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= FIESTA MEXICANA ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/fiesta_mexicana.jpg') }}" alt="Fiesta Mexicana">
+    <h2>Fiesta Mexicana</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Fiesta Mexicana</h3>
+      <p>2 tacos crocantes, 2 mini burritos, 2 mini quesadillas, 2 mini flautas y nachos con cebolla, cilantro y queso fresco.</p>
+      <div class="precio">$78.000</div>
+      <button onclick="agregarPedido('Fiesta Mexicana', 78000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= FLAUTAS MEXICANAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/flautas.jpg') }}" alt="Flautas Mexicanas">
+    <h2>Flautas Mexicanas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Flautas Mexicanas</h3>
+      <p>Flautas ahogadas doradas de pollo queso, pastor y chili con carne. (1) Flauta de pollo queso en salsa tártara de la casa, (1) Flauta de chili con carne, (1) Flauta de pastor, ahogadas en salsa roja a base de tomates tatemados, lechuga fina, queso fresco y sour cream.</p>
+      <div class="precio">$39.000</div>
+      <button onclick="agregarPedido('Flautas Mexicanas', 39000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= FUNDIDOS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/fundidos.jpg') }}" alt="Fundidos">
+    <h2>Fundidos</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Fundido Jalisco</h3>
+      <p>Cama de queso fundido con toque tatemado ahumado, coronada con proteína a elección, guacamole, pico de gallo y un toque de Tajín. Acompañado de tortillas nixtamalizadas y sour cream.</p>
+      <div class="precio">$65.000</div>
+      <button onclick="agregarPedido('Fundido Jalisco', 65000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= GARNACHERÍAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/garnacherias.jpg') }}" alt="Garnacherías">
+    <h2>Garnacherías</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Enchiladas Rojas</h3>
+      <p>3 tortillas de maíz nixtamalizadas rellenas de pollo desmechado, bañadas en salsa roja, cubiertas con queso semi salado, acompañadas de frijoles refritos, queso semisalado y totopos.</p>
+      <div class="precio">$36.000</div>
+      <button onclick="agregarPedido('Enchiladas Rojas', 36000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Fajita de Res</h3>
+      <p>Selección de lomo fino salteado con cebolla y pimentón, queso gratinado, guacamole, totopos artesanales, flor de aguacate y toque de Tajín.</p>
+      <div class="precio">$38.000</div>
+      <button onclick="agregarPedido('Fajita de Res', 38000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Fajita de Pollo</h3>
+      <p>Pollo desmechado salteado con cebolla y pimentón, queso gratinado, guacamole, totopos artesanales, flor de aguacate y toque de Tajín.</p>
+      <div class="precio">$36.000</div>
+      <button onclick="agregarPedido('Fajita de Pollo', 36000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Enmoladas</h3>
+      <p>3 tortillas rellenas de pollo desmechado, bañadas en salsa de mole, cubiertas con queso semi salado, acompañadas de frijoles refritos, queso semisalado y totopos.</p>
+      <div class="precio">$39.000</div>
+      <button onclick="agregarPedido('Enmoladas', 39000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Chilaquiles</h3>
+      <p>Selección de totopos acompañados de salsa de guacamole, salsa roja y pollo desmechado con huevo estrellado, queso semisalado, pico de gallo y cilantro.</p>
+      <div class="precio">$37.000</div>
+      <button onclick="agregarPedido('Chilaquiles', 37000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= GRILL ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/grill.jpg') }}" alt="Grill">
+    <h2>Grill</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Punta de Anca</h3>
+      <p>Pieza de punta de Anca madurada de 400 gr. Servido con vegetales salteados al wok y papas rústicas crocantes.</p>
+      <div class="precio">$74.000</div>
+      <button onclick="agregarPedido('Punta de Anca', 74000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Chatas (200 g)</h3>
+      <p>Pieza de chatas madurada de 200 g, servidas con papa a la francesa.</p>
+      <div class="precio">$38.000</div>
+      <button onclick="agregarPedido('Chatas (200 g)', 38000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Chatas (400 g)</h3>
+      <p>Pieza de chatas madurada de 400 g, servidas con vegetales salteados al wok y papas rústicas crocantes.</p>
+      <div class="precio">$65.000</div>
+      <button onclick="agregarPedido('Chatas (400 g)', 65000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Rack de Cerdo</h3>
+      <p>Pieza de Rack de Cerdo a la parrilla de 350 gr en chimichurri de mango. Servido con vegetales salteados al wok y papas rústicas crocantes.</p>
+      <div class="precio">$65.000</div>
+      <button onclick="agregarPedido('Rack de Cerdo', 65000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Rib Eye</h3>
+      <p>Pieza de rib eye madurado de 400 gr. Servido con vegetales salteados al wok y papas rústicas crocantes.</p>
+      <div class="precio">$74.000</div>
+      <button onclick="agregarPedido('Rib Eye', 74000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= HAMBURGUESAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/hamburguesas.jpg') }}" alt="Hamburguesas">
+    <h2>Hamburguesas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Hamburguesa Coyote</h3>
+      <p>Exquisita hamburguesa con pan brioche, jugosa carne de 180 gr, queso cheddar, aros de cebolla en panko, shrimps de tortilla nixtamalizada, tomate, lechuga, tocineta y queso mozzarella Jack Pepper. Acompañada de papa a la francesa en sal de chile.</p>
+      <div class="precio">$38.000</div>
+      <button onclick="agregarPedido('Hamburguesa Coyote', 38000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MENÚ INFANTIL ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/menu_infantil.jpg') }}" alt="Menú Infantil">
+    <h2>Menú Infantil</h2>
+  </div>
+
+  <div class="menu-items">
+
+    <div class="item">
+      <h3>Media quesadilla de pollo queso</h3>
+      <p>Tortilla de trigo rellena de pollo y queso. Acompañada de papas fritas.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Media quesadilla de pollo queso', 25000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tenders de Pollo artesanales</h3>
+      <p>Deliciosas piezas de pollo apanadas, jugosas por dentro y crujientes por fuera, acompañadas de papa a la francesa.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Tenders de Pollo artesanales', 25000)">Agregar</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================= MOLCAJETES ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/molcajetes.jpg') }}" alt="Molcajetes">
+    <h2>Molcajetes</h2>
+  </div>
+
+  <div class="menu-items">
+
+    <div class="item">
+      <h3>Molcajete mar y tierra</h3>
+      <p>Suave guacamole como base, acompañado de camarones apanados, crujiente chicharrón y pico de gallo. Acompañado de tortillas ahumadas y sour cream.</p>
+      <div class="precio">$67.000</div>
+      <button onclick="agregarPedido('Molcajete mar y tierra', 67000)">Agregar</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================= NACHOS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/nachos.jpg') }}" alt="Nachos">
+    <h2>Nachos</h2>
+  </div>
+
+  <div class="menu-items">
+
+    <div class="item">
+      <h3>Birria de res</h3>
+      <p>Totopos, birria de res, salsa cheddar, jalapeños, guacamole, pico de gallo y mix de quesos gratinado.</p>
+      <div class="precio">$55.000</div>
+      <button onclick="agregarPedido('Nachos Birria de res', 55000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Chili con carne</h3>
+      <p>Totopos, chili con carne, doble salsa cheddar, jalapeños, guacamole y pico de gallo. (Para dos personas)</p>
+      <div class="precio">$49.000</div>
+      <button onclick="agregarPedido('Nachos Chili con carne', 49000)">Agregar</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================= PAPAS LOCAS MEXICANAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/papaslocas.jpg') }}" alt="Papas Locas Mexicanas">
+    <h2>Papas Locas Mexicanas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Papas Locas Mexicanas</h3>
+      <p>
+        Crujientes papas a la francesa, acompañadas con proteína a elección, salchicha americana,
+        guacamole cremoso, fresco pico de gallo, salsa mayo chipotle, queso salado
+        y una capa gratinada de queso doble crema.
+      </p>
+      <div class="precio">$36.000</div>
+      <button onclick="agregarPedido('Papas Locas Mexicanas', 36000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= PIZZAS MEXICANAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/pizzas.jpg') }}" alt="Pizzas Mexicanas">
+    <h2>Pizzas Mexicanas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Pizzabirria</h3>
+      <p>
+        Tres tortillas de maíz rellenas de birria de res y mix de quesos.
+        Acompañada de consomé de birria y cilantro.
+      </p>
+      <div class="precio">$66.000</div>
+      <button onclick="agregarPedido('Pizzabirria', 66000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Pizza Gringa (Pastor)</h3>
+      <p>
+        Tres tortillas de maíz rellenas de cerdo marinado, piña asada, cebolla, cilantro y mix de quesos.
+      </p>
+      <div class="precio">$63.000</div>
+      <button onclick="agregarPedido('Pizza Gringa (Pastor)', 63000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= POSTRES ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/postres.jpg') }}" alt="Postres">
+    <h2>Postres</h2>
+  </div>
+
+  <div class="menu-items">
+
+    <div class="item">
+      <h3>Chimichanga de Nutella</h3>
+      <p>
+        Cremoso de Nutella derretido, rodajas de banano y fresas, envueltos en tortillas de trigo doradas a la perfección,
+        con un toque cálido de canela, azúcar glass y porción de helado de vainilla.
+      </p>
+      <div class="precio">$35.000</div>
+      <button onclick="agregarPedido('Chimichanga de Nutella', 35000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Churros Mexicanos</h3>
+      <p>
+        Deliciosas piezas de churro con helado, acompañadas de salsas de chocolate o frutos rojos.
+      </p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Churros Mexicanos', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tostada Francesa</h3>
+      <p>
+        Tostada de pan brioche, acompañada de mermelada de frutos rojos o salsa de chocolate
+        con su merecida porción de helado de vainilla.
+      </p>
+      <div class="precio">$24.000</div>
+      <button onclick="agregarPedido('Tostada Francesa', 24000)">Agregar</button>
+    </div>
+
+  </div>
+</section>
+
+  <!-- ================= QUESADILLAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/quesadillas.jpg') }}" alt="Quesadillas">
+    <h2>Quesadillas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Pastor</h3>
+      <p>Tortilla de trigo rellena de cerdo marinado, piña asada y mix de quesos. Acompañada de totopos y guacamole.</p>
+      <div class="precio">$35.000</div>
+      <button onclick="agregarPedido('Quesadilla Pastor', 35000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Cochinita</h3>
+      <p>Tortilla de trigo rellena de exquisita carne de cerdo cocinada por 4 horas y mix de quesos. Acompañada de totopos y guacamole.</p>
+      <div class="precio">$37.000</div>
+      <button onclick="agregarPedido('Quesadilla Cochinita', 37000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Quesabirrias</h3>
+      <p>3 tortillas de maíz rellenas de birria de res y mix de quesos. Acompañadas de consomé de birria y totopos.</p>
+      <div class="precio">$39.000</div>
+      <button onclick="agregarPedido('Quesabirrias', 39000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Pollo</h3>
+      <p>3 tortillas de maíz rellenas de pollo desmechado salteado con cebolla y pimentón y mix de quesos. Acompañadas de totopos.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Quesadilla Pollo', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Veggie</h3>
+      <p>Tortillas de trigo rellenas de vegetales salteados (champiñón, pimentones, cebolla, maíz, calabacín), frijol negro y mix de quesos. Acompañadas de totopos y guacamole.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Quesadilla Veggie', 28000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= ROMPECORAZONES ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/rompecorazones.jpg') }}" alt="Rompecorazones">
+    <h2>Rompecorazones</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Rompecorazones</h3>
+      <p>30 tacos a tu gusto.</p>
+      <div class="precio">$270.000</div>
+      <button onclick="agregarPedido('Rompecorazones', 270000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= SOPA MEXICANA ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/sopa_mexicana.jpg') }}" alt="Sopa Mexicana">
+    <h2>Sopa Mexicana</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Cema Azteca</h3>
+      <p>Sopa de jitomates, chiles secos, pollo desmechado, queso semi salado, aguacate y tortilla crocante.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Sopa Cema Azteca', 25000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= TAQUERÍA ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/taqueria.jpg') }}" alt="Taquería">
+    <h2>Taquería</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Tacos al Pastor</h3>
+      <p>3 tortillas de maíz nixtamalizadas, cerdo marinado, piña asada, cebolla y cilantro, acompañados de salsa de tu preferencia.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Tacos al Pastor', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Taco de Cochinita Pibil</h3>
+      <p>3 tortillas de maíz nixtamalizadas, cerdo cocinado por cuatro horas, cebolla roja, cilantro, acompañados de salsas de tu preferencia.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Taco de Cochinita Pibil', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tacos de Birria</h3>
+      <p>3 tortillas de maíz nixtamalizadas, birria de res, cebolla y cilantro, acompañados de la salsa de tu preferencia.</p>
+      <div class="precio">$33.000</div>
+      <button onclick="agregarPedido('Tacos de Birria', 33000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tacos de Alambre de Pollo</h3>
+      <p>3 tortillas de maíz, pollo a la mexicana (salteado con cebolla, pimentones y salsa de la casa), cebolla y cilantro, acompañados de la salsa de tu preferencia.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Tacos de Alambre de Pollo', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tacos de Chicharrón en Salsa Verde</h3>
+      <p>3 tortillas de maíz nixtamalizadas, chicharrón crujiente en salsa verde de la casa, costra de queso, cebolla y cilantro, acompañados de la salsa de tu preferencia.</p>
+      <div class="precio">$33.000</div>
+      <button onclick="agregarPedido('Tacos de Chicharrón en Salsa Verde', 33000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tacos Gobernador</h3>
+      <p>3 tortillas de maíz nixtamalizadas, camarones, costra de queso, cebolla y cilantro, acompañados de la salsa de tu preferencia.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Tacos Gobernador', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tacos Veggie</h3>
+      <p>3 tortillas de maíz, vegetales salteados (champiñón, pimentones, cebolla, maíz, calabacín), frijol negro, cebolla y cilantro, acompañados de la salsa de tu preferencia.</p>
+      <div class="precio">$26.000</div>
+      <button onclick="agregarPedido('Tacos Veggie', 26000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= AGUAS FRESCAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/aguas_frescas.jpg') }}" alt="Aguas Frescas">
+    <h2>Aguas Frescas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Horchata</h3>
+      <p>Refrescante Agua de Horchata, elaborada con arroz remojado, canela, hielo y azúcar.</p>
+      <div class="precio">$9.000</div>
+      <button onclick="agregarPedido('Horchata', 9000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Jamaica</h3>
+      <p>Refrescante Agua de tamarindo, hielo y azúcar.</p>
+      <div class="precio">$9.000</div>
+      <button onclick="agregarPedido('Agua Jamaica', 9000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tamarindo</h3>
+      <p>Refrescante Agua de Jamaica, hielo y azúcar.</p>
+      <div class="precio">$9.000</div>
+      <button onclick="agregarPedido('Agua Tamarindo', 9000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BEBIDAS FRÍAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/bebidas_frias.jpg') }}" alt="Bebidas Frías">
+    <h2>Bebidas Frías</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Soda Hatsu</h3>
+      <div class="precio">$6.500</div>
+      <button onclick="agregarPedido('Soda Hatsu', 6500)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Soda Bretaña</h3>
+      <div class="precio">$7.000</div>
+      <button onclick="agregarPedido('Soda Bretaña', 7000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Te Hatsu</h3>
+      <div class="precio">$7.000</div>
+      <button onclick="agregarPedido('Te Hatsu', 7000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Agua Manantial con gas</h3>
+      <div class="precio">$7.000</div>
+      <button onclick="agregarPedido('Agua Manantial con gas', 7000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Agua Manantial sin gas</h3>
+      <div class="precio">$7.000</div>
+      <button onclick="agregarPedido('Agua Manantial sin gas', 7000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Agua Hatsu</h3>
+      <div class="precio">$6.500</div>
+      <button onclick="agregarPedido('Agua Hatsu', 6500)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Agua Hatsu con gas</h3>
+      <div class="precio">$6.500</div>
+      <button onclick="agregarPedido('Agua Hatsu con gas', 6500)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Coca Cola 400 ml</h3>
+      <div class="precio">$8.000</div>
+      <button onclick="agregarPedido('Coca Cola 400 ml', 8000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Coca Cola Zero 400 ml</h3>
+      <div class="precio">$8.000</div>
+      <button onclick="agregarPedido('Coca Cola Zero 400 ml', 8000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CANTARITO ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/cantarito.jpg') }}" alt="Cantarito">
+    <h2>Cantarito</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Cantarito</h3>
+      <p>Refrescante coctel tradicional de México, contiene tequila, tamarindo, naranja, soda y sirope de la casa.</p>
+      <div class="precio">$33.000</div>
+      <button onclick="agregarPedido('Cantarito', 33000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= CHELAS Y MICHELADAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/chelas_micheladas.jpg') }}" alt="Chelas y Micheladas">
+    <h2>Chelas y Micheladas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Michelada Clásica</h3>
+      <p>Coronita, salsas de la casa y limón.</p>
+      <div class="precio">$18.000</div>
+      <button onclick="agregarPedido('Michelada Clásica', 18000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Michelada Zapata</h3>
+      <p>Coronita, tamarindo, mango, salsas de la casa y limón.</p>
+      <div class="precio">$21.000</div>
+      <button onclick="agregarPedido('Michelada Zapata', 21000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Michelada la Mera</h3>
+      <p>Coronita, maracuyá, salsa de la casa y limón.</p>
+      <div class="precio">$21.000</div>
+      <button onclick="agregarPedido('Michelada la Mera', 21000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Corona 330 ml</h3>
+      <div class="precio">$13.000</div>
+      <button onclick="agregarPedido('Corona 330 ml', 13000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Coronita 210 ml</h3>
+      <div class="precio">$9.000</div>
+      <button onclick="agregarPedido('Coronita 210 ml', 9000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Sol 250 ml</h3>
+      <div class="precio">$9.000</div>
+      <button onclick="agregarPedido('Sol 250 ml', 9000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Heineken 250 ml</h3>
+      <div class="precio">$10.000</div>
+      <button onclick="agregarPedido('Heineken 250 ml', 10000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Stella Artois 330 ml</h3>
+      <div class="precio">$13.000</div>
+      <button onclick="agregarPedido('Stella Artois 330 ml', 13000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COCTELERÍA CLÁSICA ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/cocteleria_clasica.jpg') }}" alt="Coctelería Clásica">
+    <h2>Coctelería Clásica</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Piña Colada</h3>
+      <p>Ron Bacardí, helado de vainilla, piña, lecherita y crema de coco.</p>
+      <div class="precio">$33.000</div>
+      <button onclick="agregarPedido('Piña Colada', 33000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Mimosa</h3>
+      <div class="precio">$17.000</div>
+      <button onclick="agregarPedido('Mimosa', 17000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Daikiri</h3>
+      <p>Ron, limón y sirope de la casa.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Daikiri', 25000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Kaipiroska</h3>
+      <p>Vodka, limón y sirope de la casa.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Kaipiroska', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Cosmopolitan</h3>
+      <p>Vodka, Triple Sec, Limón, Sirope arándano.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Cosmopolitan', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Gin And Tonic</h3>
+      <p>Ginebra Gordons y soda Hatsu.</p>
+      <div class="precio">$33.000</div>
+      <button onclick="agregarPedido('Gin And Tonic', 33000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Cuba Libre</h3>
+      <p>Ron Bacardí, coca cola, rodajas de limón.</p>
+      <div class="precio">$32.000</div>
+      <button onclick="agregarPedido('Cuba Libre', 32000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tinto de Verano (Copa)</h3>
+      <p>Vino tinto, naranja, soda y sirope de la casa.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Tinto de Verano (Copa)', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tequila Sunrise</h3>
+      <p>Tequila José Cuervo, jugo de naranja y jarabe de frutos rojos.</p>
+      <div class="precio">$32.000</div>
+      <button onclick="agregarPedido('Tequila Sunrise', 32000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Whisky Sour</h3>
+      <p>Whisky PYP, clara de huevo, limón y sirope de la casa.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Whisky Sour', 25000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Al Paccino</h3>
+      <p>Whisky y Amareto.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Al Paccino', 25000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Paloma</h3>
+      <p>Tequila Blanco, soda toronja, sal, sirope de la casa y limón.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Paloma', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Pornstar</h3>
+      <p>Vodka, pulpa de maracuyá, vainilla, sirope de la casa y limón.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Pornstar', 28000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COCTELERÍA DE AUTOR ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/cocteleria_autor.jpg') }}" alt="Coctelería de Autor">
+    <h2>Coctelería de Autor</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Arte de Frida</h3>
+      <p>Ginebra rosada, sirope de cereza, sirope simple, zumo de limón, soda y hielo.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Arte de Frida', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Grito de Hidalgo</h3>
+      <p>José Cuervo Silver, zumo de maracuyá, sirope, zumo de limón.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Grito de Hidalgo', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Oaxaca Sour</h3>
+      <p>Mezcal 400 Conejos, sirope de jalapeño y limón.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Oaxaca Sour', 30000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= GRANIZADAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/granizadas.jpg') }}" alt="Granizadas">
+    <h2>Granizadas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Limón</h3>
+      <div class="precio">$12.000</div>
+      <button onclick="agregarPedido('Granizada Limón', 12000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Naranja</h3>
+      <div class="precio">$12.000</div>
+      <button onclick="agregarPedido('Granizada Naranja', 12000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Limonada de Hierbabuena</h3>
+      <div class="precio">$12.000</div>
+      <button onclick="agregarPedido('Limonada de Hierbabuena', 12000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Limonada de Coco</h3>
+      <div class="precio">$14.000</div>
+      <button onclick="agregarPedido('Limonada de Coco', 14000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Cerezada</h3>
+      <div class="precio">$12.000</div>
+      <button onclick="agregarPedido('Cerezada', 12000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= MALTEADAS ZAPATA ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/malteadas_zapata.jpg') }}" alt="Malteadas Zapata">
+    <h2>Malteadas Zapata</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Malteada de Chocorramo</h3>
+      <p>El icónico sabor del chocorramo y galletas, para los amantes de los sabores únicos.</p>
+      <div class="precio">$18.000</div>
+      <button onclick="agregarPedido('Malteada de Chocorramo', 18000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Malteada de Baileys y Caramelo salado</h3>
+      <p>Exquisita combinación de sabores con helado, café, caramelo salado, galleta y Baileys.</p>
+      <div class="precio">$25.000</div>
+      <button onclick="agregarPedido('Malteada de Baileys y Caramelo salado', 25000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MARGARITAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/margaritas.jpg') }}" alt="Margaritas">
+    <h2>Margaritas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Margarita Clásica</h3>
+      <p>Tequila blanco, triple sec y limón.</p>
+      <div class="precio">$26.000</div>
+      <button onclick="agregarPedido('Margarita Clásica', 26000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Margarita Mango</h3>
+      <p>Tequila José Cuervo, triple sec y mango.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Margarita Mango', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Margarita de Maracuyá</h3>
+      <p>Tequila José Cuervo, triple sec y maracuyá.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Margarita de Maracuyá', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Margarita Blue</h3>
+      <p>Tequila blanco José Cuervo, triple sec, zumo de limón, blue curazao, hielo y sal.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Margarita Blue', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Margarita Frida</h3>
+      <p>Tequila José Cuervo, granadina, zumo de limón y sal.</p>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Margarita Frida', 28000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= MEZCAL Y TEQUILAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/mezcal_tequilas.jpg') }}" alt="Mezcal y Tequilas">
+    <h2>Mezcal y Tequilas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Mezcal 400 Conejos</h3>
+      <div class="precio">$390.000</div>
+      <button onclick="agregarPedido('Mezcal 400 Conejos', 390000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$37.000</div>
+      <button onclick="agregarPedido('Trago Mezcal 1', 37000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Don Julio Blanco</h3>
+      <div class="precio">$415.000</div>
+      <button onclick="agregarPedido('Don Julio Blanco', 415000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$38.000</div>
+      <button onclick="agregarPedido('Trago Tequila 1', 38000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Don Julio Reposado</h3>
+      <div class="precio">$517.000</div>
+      <button onclick="agregarPedido('Don Julio Reposado', 517000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$40.000</div>
+      <button onclick="agregarPedido('Trago Tequila 2', 40000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>1800 Añejo Cristalino</h3>
+      <div class="precio">$530.000</div>
+      <button onclick="agregarPedido('1800 Añejo Cristalino', 530000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$45.000</div>
+      <button onclick="agregarPedido('Trago Tequila 3', 45000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>José Cuervo Reposado</h3>
+      <div class="precio">$180.000</div>
+      <button onclick="agregarPedido('José Cuervo Reposado', 180000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$26.000</div>
+      <button onclick="agregarPedido('Trago Tequila 4', 26000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>José Cuervo Silver</h3>
+      <div class="precio">$160.000</div>
+      <button onclick="agregarPedido('José Cuervo Silver', 160000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$26.000</div>
+      <button onclick="agregarPedido('Trago Tequila 5', 26000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+  <!-- ================= MOJITOS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/mojitos.jpg') }}" alt="Mojitos">
+    <h2>Mojitos</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Mojito</h3>
+      <p>Coctel refrescante a base de ron Bacardí, soda, limón y sirope de la casa.</p>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Mojito', 30000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OTROS DESTILADOS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/otros_destilados.jpg') }}" alt="Otros Destilados">
+    <h2>Otros Destilados</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Whisky Buchanans 12 años</h3>
+      <div class="precio">$305.000</div>
+      <button onclick="agregarPedido('Whisky Buchanans 12 años', 305000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Trago Whisky 1', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Ginebra Tanqueray</h3>
+      <div class="precio">$260.000</div>
+      <button onclick="agregarPedido('Ginebra Tanqueray', 260000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$30.000</div>
+      <button onclick="agregarPedido('Trago Ginebra 1', 30000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Vodka Absolut</h3>
+      <div class="precio">$180.000</div>
+      <button onclick="agregarPedido('Vodka Absolut', 180000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Trago Vodka 1', 28000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Ron Cacique</h3>
+      <div class="precio">$150.000</div>
+      <button onclick="agregarPedido('Ron Cacique', 150000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$26.000</div>
+      <button onclick="agregarPedido('Trago Ron 1', 26000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Aguardiente Antioqueño</h3>
+      <div class="precio">$200.000</div>
+      <button onclick="agregarPedido('Aguardiente Antioqueño', 200000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trago</h3>
+      <div class="precio">$28.000</div>
+      <button onclick="agregarPedido('Trago Aguardiente 1', 28000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SODAS TÓNICAS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/sodas_tonicas.jpg') }}" alt="Sodas Tónicas">
+    <h2>Sodas Tónicas</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Frutos Rojos</h3>
+      <p>Fresas, uvas y arándanos.</p>
+      <div class="precio">$15.000</div>
+      <button onclick="agregarPedido('Frutos Rojos', 15000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Frutos Amarillos</h3>
+      <p>Mango, uchuva, piña y maracuyá.</p>
+      <div class="precio">$15.000</div>
+      <button onclick="agregarPedido('Frutos Amarillos', 15000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= VINOS ================= -->
+<section class="menu-section">
+  <div class="category-header">
+    <img src="{{ url_for('static', filename='img/vinos.jpg') }}" alt="Vinos">
+    <h2>Vinos</h2>
+  </div>
+
+  <div class="menu-items">
+    <div class="item">
+      <h3>Las Moras Malbec</h3>
+      <div class="precio">$105.000</div>
+      <button onclick="agregarPedido('Las Moras Malbec', 105000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tarapacá Reserva Chardonnay</h3>
+      <div class="precio">$115.000</div>
+      <button onclick="agregarPedido('Tarapacá Reserva Chardonnay', 115000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Trapiche Rosado Malbec</h3>
+      <div class="precio">$102.000</div>
+      <button onclick="agregarPedido('Trapiche Rosado Malbec', 102000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Tarapacá Varietal Merlot</h3>
+      <div class="precio">$130.000</div>
+      <button onclick="agregarPedido('Tarapacá Varietal Merlot', 130000)">Agregar</button>
+    </div>
+
+    <div class="item">
+      <h3>Don Simón</h3>
+      <div class="precio">$85.000</div>
+      <button onclick="agregarPedido('Don Simón', 85000)">Agregar</button>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ================= PEDIDO ================= -->
+  <section class="pedido">
+    <h2>Pedido</h2>
+    <div class="mesa-input">
+      <label for="mesa">Mesa:</label>
+      <input type="number" id="mesa" placeholder="Número de mesa">
+    </div>
+    <ul id="lista-pedido"></ul>
+    <div class="total" id="total">Total: $0</div>
+    <div class="acciones">
+      <button id="vaciar" onclick="vaciarPedido()">Vaciar Pedido</button>
+      <button id="enviar" onclick="enviarPedido()">Enviar a Cocina</button>
+    </div>
+  </section>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+</body>
+</html>

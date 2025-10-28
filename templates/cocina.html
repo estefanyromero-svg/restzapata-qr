@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cocina - Restaurante QR</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/cocina.css') }}">
+</head>
+<body>
+  <header>
+    <h1>👨‍🍳 Panel de Cocina</h1>
+    <button id="btn-cargar-pedidos" class="btn-recargar">INGRESAR PEDIDOS</button>
+  </header>
+
+  <main>
+    <section>
+      <h2>📋 Pendientes</h2>
+      <div id="lista-pedidos"></div>
+    </section>
+
+    <section>
+      <h2>📦 Historial</h2>
+      <div id="lista-procesados"></div>
+    </section>
+  </main>
+
+  <div id="toast"></div>
+
+  <script src="https://cdn.socket.io/4.7.2/socket.io.min.js"></script>
+  <script src="{{ url_for('static', filename='js/cocina.js') }}"></script>
+</body>
+</html>
